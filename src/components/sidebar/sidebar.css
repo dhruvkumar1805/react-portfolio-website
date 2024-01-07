@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: white;
+  background-color: whit;
   color: black;
 }
 
@@ -13,7 +13,7 @@
   left: 0;
   bottom: 0;
   width: 350px;
-  background: white;
+  background: lightgray;
 }
 
 .links {
@@ -31,7 +31,7 @@
   font-size: 35px;
 }
 
-button {
+.toggleButton {
   width: 50px;
   height: 50px;
   border-radius: 50%;

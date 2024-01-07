@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 const ToggleButton = ({ setOpen }) => {
   return (
     <button
+      className="toggleButton"
       onClick={() => {
         setOpen((prev) => !prev);
       }}

@@ -1,0 +1,74 @@
+.main {
+  height: calc(100vh - 100px);
+}
+
+.mainWrapper {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  padding-bottom: 100px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  height: 100%;
+}
+
+.container img {
+  width: 9%;
+}
+
+h1 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+p {
+  font-size: 56px;
+  text-align: center;
+  width: 60%;
+  font-weight: bold;
+}
+
+.description {
+  text-align: center;
+  width: 40%;
+  color: rgba(211, 211, 211, 0.495);
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.mainButton {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  margin-top: 8px;
+  padding: 0.5rem 1.5rem;
+  background: linear-gradient(to right, #823fee, #1756dd);
+  border: none;
+  border-radius: 5rem;
+  cursor: pointer;
+  text-decoration: none;
+  color: #ffffff;
+  transition: all 0.3s ease 0s;
+}
+
+.mainButton:hover {
+  box-shadow: 0 0 1rem #1756dd;
+}
+
+.slidingTextContainer {
+  position: absolute;
+  bottom: -50px;
+  color: #ffffff09;
+  font-size: 50vh;
+  white-space: nowrap;
+  width: 50%;
+  font-weight: normal;
+  z-index: -1;
+}
