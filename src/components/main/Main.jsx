@@ -43,13 +43,65 @@ const Main = () => {
           animate="animate"
         >
           <img src="/src/assets/hero.png" alt="" />
+          <motion.img
+            className="reactLogo"
+            src="/src/assets/react.png"
+            alt=""
+            animate={{
+              x: [0, 7, -7, 0],
+              rotate: [0, 7, -7, 0],
+            }}
+            transition={{
+              repeat: Infinity,
+              duration: 8,
+            }}
+          />
+          <motion.img
+            className="javascriptLogo"
+            src="/src/assets/javascript.png"
+            alt=""
+            animate={{
+              y: [0, 7, -7, 0],
+              rotate: [0, 7, -7, 0],
+            }}
+            transition={{
+              repeat: Infinity,
+              duration: 8,
+            }}
+          />
+          <motion.img
+            className="githubLogo"
+            src="/src/assets/github.png"
+            alt=""
+            animate={{
+              x: [0, 7, -7, 0],
+              rotate: [0, 7, -7, 0],
+            }}
+            transition={{
+              repeat: Infinity,
+              duration: 8,
+            }}
+          />
+          <motion.img
+            className="linuxLogo"
+            src="/src/assets/linux.png"
+            alt=""
+            animate={{
+              y: [0, 7, -7, 0],
+              rotate: [0, 7, -7, 0],
+            }}
+            transition={{
+              repeat: Infinity,
+              duration: 8,
+            }}
+          />
           <motion.h1 variants={textVariants}>Hi, I'm Dhruv</motion.h1>
           <motion.p variants={textVariants}>
             Crafting Seamless Code for Unparalleled Digital Excellence.
           </motion.p>
           <motion.p variants={textVariants} className="description">
-            Web and Android dev: crafting seamless digital experiences with a
-            background in custom ROM development.
+            Versatile Web and Android Developer, crafting impactful experiences.
+            Let's collaborate on innovative projects.
           </motion.p>
           <motion.button variants={textVariants} className="mainButton">
             See my works

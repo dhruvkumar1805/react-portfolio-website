@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import "./sidebar.css";
 import Links from "./links/Links";
-import ToggleButton from "./toggleButton/toggleButton";
+import ToggleButton from "./toggleButton/ToggleButton";
 
 const variants = {
   open: {
@@ -13,7 +13,7 @@ const variants = {
     },
   },
   closed: {
-    clipPath: "circle(30px at 49px 47px)",
+    clipPath: "circle(30px at 53px 51px)",
     transition: {
       type: "spring",
       stiffness: 400,

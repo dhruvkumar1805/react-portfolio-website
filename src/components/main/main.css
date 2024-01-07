@@ -1,5 +1,6 @@
 .main {
   height: calc(100vh - 100px);
+  background: linear-gradient(180deg, #0c0c1d, #111132);
 }
 
 .mainWrapper {
@@ -9,6 +10,34 @@
   padding-bottom: 100px;
 }
 
+.mainWrapper .reactLogo {
+  position: absolute;
+  top: 110px;
+  left: 39%;
+  width: 35px;
+}
+
+.mainWrapper .javascriptLogo {
+  position: absolute;
+  top: 15px;
+  left: 37%;
+  width: 28px;
+}
+
+.mainWrapper .githubLogo {
+  position: absolute;
+  top: 30px;
+  right: 40%;
+  width: 28px;
+}
+
+.mainWrapper .linuxLogo {
+  position: absolute;
+  top: 110px;
+  right: 37%;
+  width: 35px;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -16,6 +45,8 @@
   justify-content: center;
   gap: 15px;
   height: 100%;
+  position: relative;
+  z-index: 7;
 }
 
 .container img {
@@ -23,8 +54,8 @@
 }
 
 h1 {
-  font-size: 22px;
-  font-weight: 600;
+  font-size: 32px;
+  font-weight: 500;
 }
 
 p {
@@ -47,7 +78,7 @@ p {
   display: flex;
   justify-content: center;
   font-size: 16px;
-  margin-top: 8px;
+  margin-top: 12px;
   padding: 0.5rem 1.5rem;
   background: linear-gradient(to right, #823fee, #1756dd);
   border: none;
@@ -64,11 +95,11 @@ p {
 
 .slidingTextContainer {
   position: absolute;
-  bottom: -50px;
+  bottom: -40px;
   color: #ffffff09;
   font-size: 50vh;
   white-space: nowrap;
   width: 50%;
   font-weight: normal;
-  z-index: -1;
+  /* z-index: -1; */
 }

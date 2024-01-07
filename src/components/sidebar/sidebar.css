@@ -5,6 +5,8 @@
   justify-content: center;
   background-color: whit;
   color: black;
+  position: relative;
+  z-index: 999;
 }
 
 .bg {
@@ -36,8 +38,8 @@
   height: 50px;
   border-radius: 50%;
   position: fixed;
-  top: 25px;
-  left: 25px;
+  top: 30px;
+  left: 30px;
   background-color: transparent;
   border: none;
   cursor: pointer;
