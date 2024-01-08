@@ -96,14 +96,18 @@ const Main = () => {
             }}
           />
           <motion.h1 variants={textVariants}>Hi, I'm Dhruv</motion.h1>
-          <motion.p variants={textVariants}>
+          <motion.p variants={textVariants} className="mainDescription">
             Crafting Seamless Code for Unparalleled Digital Excellence.
           </motion.p>
           <motion.p variants={textVariants} className="description">
             Versatile Web and Android Developer, crafting impactful experiences.
             Let's collaborate on innovative projects.
           </motion.p>
-          <motion.button variants={textVariants} className="mainButton">
+          <motion.button
+            variants={textVariants}
+            className="mainButton"
+            whileHover={{ boxShadow: "0 0 1rem #1756dd" }}
+          >
             See my works
           </motion.button>
         </motion.div>

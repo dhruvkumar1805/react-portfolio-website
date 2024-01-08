@@ -2,6 +2,7 @@ import React from "react";
 import "./app.css";
 import Navbar from "./components/navbar/Navbar";
 import Main from "./components/main/Main";
+import Skills from "./components/skills/Skills";
 
 const App = () => {
   return (
@@ -10,10 +11,12 @@ const App = () => {
         <Navbar />
         <Main />
       </section>
-      <section id="Services">Services</section>
-      <section id="Portfolio">portfolio1</section>
-      <section id="Contact">Contact</section>
+      <section id="Skills">
+        <Skills />
+      </section>
+      <section id="Projects">Projects</section>
       <section id="About">About</section>
+      <section id="Contact">Contact</section>
     </div>
   );
 };

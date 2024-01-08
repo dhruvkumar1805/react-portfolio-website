@@ -58,7 +58,7 @@ h1 {
   font-weight: 500;
 }
 
-p {
+.mainDescription {
   font-size: 56px;
   text-align: center;
   width: 60%;
@@ -86,11 +86,6 @@ p {
   cursor: pointer;
   text-decoration: none;
   color: #ffffff;
-  transition: all 0.3s ease 0s;
-}
-
-.mainButton:hover {
-  box-shadow: 0 0 1rem #1756dd;
 }
 
 .slidingTextContainer {
@@ -101,5 +96,4 @@ p {
   white-space: nowrap;
   width: 50%;
   font-weight: normal;
-  /* z-index: -1; */
 }
