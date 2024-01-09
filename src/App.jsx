@@ -3,6 +3,7 @@ import "./app.css";
 import Navbar from "./components/navbar/Navbar";
 import Main from "./components/main/Main";
 import Skills from "./components/skills/Skills";
+import Projects from "./components/projects/Projects";
 
 const App = () => {
   return (
@@ -14,7 +15,9 @@ const App = () => {
       <section id="Skills">
         <Skills />
       </section>
-      <section id="Projects">Projects</section>
+      <section id="Projects">
+        <Projects />
+      </section>
       <section id="About">About</section>
       <section id="Contact">Contact</section>
     </div>

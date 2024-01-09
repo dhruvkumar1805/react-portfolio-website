@@ -20,6 +20,20 @@ a {
   color: inherit;
 }
 
-section {
-  height: 100vh;
+::-webkit-scrollbar {
+  width: 4px;
+  height: 80px;
+}
+
+::-webkit-scrollbar-track {
+  background: #222a35;
+}
+
+::-webkit-scrollbar-thumb {
+  background: lightgray;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(211, 211, 211, 0.696);
 }

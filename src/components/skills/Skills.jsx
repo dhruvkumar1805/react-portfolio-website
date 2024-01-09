@@ -5,15 +5,14 @@ import { skills } from "./skillsData";
 
 const variants = {
   initial: {
-    y: 50,
+    x: -80,
     opacity: 0,
   },
   animate: {
-    y: 0,
+    x: 0,
     opacity: 1,
     transition: {
-      duration: 0.5,
-      staggerChildren: 0.1,
+      duration: 0.6,
     },
   },
 };
@@ -21,7 +20,7 @@ const variants = {
 const Skills = () => {
   const ref = useRef();
 
-  const isInView = useInView(ref, { margin: "-100px" });
+  const isInView = useInView(ref, { margin: "-200px" });
   return (
     <div className="skills">
       <div className="skillsWrapper">
@@ -38,7 +37,12 @@ const Skills = () => {
               Over the past 2 years, I've developed skills in various domains,
               here are those languages and tools
             </p>
-            <div className="skillsBoxContainer">
+            <motion.div
+              className="skillsBoxContainer"
+              variants={variants}
+              initial="initial"
+              animate="animate"
+            >
               {skills.map((skill) => (
                 <div className="skill">
                   <h1 className="skillTitle">{skill.title}</h1>
@@ -64,7 +68,7 @@ const Skills = () => {
                   </ul>
                 </div>
               ))}
-            </div>
+            </motion.div>
           </div>
         </motion.div>
       </div>

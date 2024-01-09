@@ -52,11 +52,6 @@ export const skills = [
           "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/512px-Visual_Studio_Code_1.35_icon.svg.png?20210804221519",
       },
       {
-        name: "Figma",
-        image:
-          "https://static-00.iconduck.com/assets.00/apps-figma-icon-512x512-uapiauws.png",
-      },
-      {
         name: "Bash",
         image:
           "https://static-00.iconduck.com/assets.00/bash-icon-448x512-t4tppxv4.png",
@@ -65,6 +60,36 @@ export const skills = [
         name: "Linux",
         image:
           "https://static-00.iconduck.com/assets.00/linux-icon-439x512-rnhe78x0.png",
+      },
+    ],
+  },
+  {
+    title: "Designing",
+    skills: [
+      {
+        name: "Figma",
+        image:
+          "https://static-00.iconduck.com/assets.00/apps-figma-icon-512x512-uapiauws.png",
+      },
+      {
+        name: "Adobe Photoshop",
+        image:
+          "https://static-00.iconduck.com/assets.00/adobe-photoshop-icon-512x512-sphmjz8h.png",
+      },
+      {
+        name: "Adobe Illustrator",
+        image:
+          "https://static-00.iconduck.com/assets.00/adobe-illustrator-icon-512x512-s1nfujvx.png",
+      },
+      {
+        name: "Canva",
+        image:
+          "https://www.latimes.com/coupon-codes/static/shop/37687/logo/Canva_Coupon.jpg",
+      },
+      {
+        name: "GIMP",
+        image:
+          "https://static-00.iconduck.com/assets.00/gimp-icon-512x506-1akld8rd.png",
       },
     ],
   },

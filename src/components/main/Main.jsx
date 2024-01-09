@@ -53,7 +53,7 @@ const Main = () => {
             }}
             transition={{
               repeat: Infinity,
-              duration: 8,
+              duration: 6,
             }}
           />
           <motion.img
@@ -66,7 +66,7 @@ const Main = () => {
             }}
             transition={{
               repeat: Infinity,
-              duration: 8,
+              duration: 6,
             }}
           />
           <motion.img
@@ -79,7 +79,7 @@ const Main = () => {
             }}
             transition={{
               repeat: Infinity,
-              duration: 8,
+              duration: 6,
             }}
           />
           <motion.img
@@ -92,7 +92,7 @@ const Main = () => {
             }}
             transition={{
               repeat: Infinity,
-              duration: 8,
+              duration: 6,
             }}
           />
           <motion.h1 variants={textVariants}>Hi, I'm Dhruv</motion.h1>
@@ -103,13 +103,14 @@ const Main = () => {
             Versatile Web and Android Developer, crafting impactful experiences.
             Let's collaborate on innovative projects.
           </motion.p>
-          <motion.button
+          <motion.a
+            href="#Projects"
             variants={textVariants}
             className="mainButton"
             whileHover={{ boxShadow: "0 0 1rem #1756dd" }}
           >
             See my works
-          </motion.button>
+          </motion.a>
         </motion.div>
       </div>
       <motion.div
