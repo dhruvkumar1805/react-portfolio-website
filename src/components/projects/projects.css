@@ -46,7 +46,7 @@
 .project {
   width: 330px;
   height: 380px;
-  background: rgba(211, 211, 211, 0.162);
+  background: #1b1b36;
   border-radius: 16px;
   display: flex;
   flex-direction: column;
