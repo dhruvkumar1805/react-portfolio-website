@@ -1,10 +1,11 @@
 import React from "react";
-import "./app.css";
+import "./App.css";
 import Navbar from "./components/navbar/Navbar";
 import Main from "./components/main/Main";
 import Skills from "./components/skills/Skills";
 import Projects from "./components/projects/Projects";
 import About from "./components/about/About";
+import Contact from "./components/contact/Contact";
 
 const App = () => {
   return (
@@ -22,7 +23,9 @@ const App = () => {
       <section id="About">
         <About />
       </section>
-      <section id="Contact">Contact</section>
+      <section id="Contact">
+        <Contact />
+      </section>
     </div>
   );
 };

@@ -32,7 +32,7 @@ const About = () => {
         >
           <h1>About</h1>
           <div className="aboutContent">
-            <img src="/src/assets/about.jpg" alt="" />
+            <img src="/assets/about.jpg" alt="" />
             <div className="aboutRightContainer">
               <p>
                 Greetings! I am a passionate developer hailing from Ludhiana,

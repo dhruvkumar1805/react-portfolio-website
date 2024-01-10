@@ -42,10 +42,10 @@ const Main = () => {
           initial="initial"
           animate="animate"
         >
-          <img src="/src/assets/hero.png" alt="" />
+          <img src="/assets/hero.png" alt="" />
           <motion.img
             className="reactLogo"
-            src="/src/assets/react.png"
+            src="/assets/react.png"
             alt=""
             animate={{
               x: [0, 7, -7, 0],
@@ -58,7 +58,7 @@ const Main = () => {
           />
           <motion.img
             className="javascriptLogo"
-            src="/src/assets/javascript.png"
+            src="/assets/javascript.png"
             alt=""
             animate={{
               y: [0, 7, -7, 0],
@@ -71,7 +71,7 @@ const Main = () => {
           />
           <motion.img
             className="githubLogo"
-            src="/src/assets/github.png"
+            src="/assets/github.png"
             alt=""
             animate={{
               x: [0, 7, -7, 0],
@@ -84,7 +84,7 @@ const Main = () => {
           />
           <motion.img
             className="linuxLogo"
-            src="/src/assets/linux.png"
+            src="/assets/linux.png"
             alt=""
             animate={{
               y: [0, 7, -7, 0],

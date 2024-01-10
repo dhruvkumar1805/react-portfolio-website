@@ -28,7 +28,7 @@ const Navbar = () => {
         <div className="social">
           <a href="https://github.com/dhruvkumar1805" target="_blank">
             <motion.img
-              src="/src/assets/github.png"
+              src="/assets/github.png"
               alt=""
               whileHover={{ scale: 1.2 }}
               whileTap={{ scale: 0.9 }}
@@ -39,7 +39,7 @@ const Navbar = () => {
           </a>
           <a href="https://instagram.com/dhruvkumar_1805" target="_blank">
             <motion.img
-              src="/src/assets/instagram.png"
+              src="/assets/instagram.png"
               alt=""
               whileHover={{ scale: 1.2 }}
               whileTap={{ scale: 0.9 }}

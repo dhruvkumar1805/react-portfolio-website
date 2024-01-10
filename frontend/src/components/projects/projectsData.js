@@ -27,7 +27,7 @@ const projectsData = [
     tags: ["JavaScript", "API"],
     description:
       "Introducing our Currency Converter, a web application crafted with HTML, CSS, and JavaScript, powered by an API. This user-friendly tool allows you to effortlessly convert currencies with a sleek and intuitive interface. With a focus on simplicity, our Currency Converter lets you input values, select currencies, and instantly see accurate conversion results. The use of real-time API data ensures up-to-date exchange rates, providing a reliable and efficient experience. Explore the world of global currency transactions seamlessly with our Currency Converter – where simplicity meets functionality.",
-    image: "/src/assets/projects/currency_converter.png",
+    image: "/assets/projects/currency_converter.png",
     code: "https://github.com/dhruvkumar1805/currency_converter",
     demo: "",
   },
