@@ -1,7 +1,6 @@
 .about {
   background: linear-gradient(180deg, #111132, #0c0c1d);
   position: relative;
-  height: 100vh;
 }
 
 .aboutWrapper {
@@ -19,7 +18,7 @@
   align-items: center;
   text-align: center;
   position: relative;
-  margin-top: 150px;
+  margin-top: 100px;
 }
 
 .aboutContainer h1 {
