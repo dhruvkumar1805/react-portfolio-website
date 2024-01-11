@@ -103,7 +103,12 @@ const Contact = () => {
                 setFormData({ ...formData, message: e.target.value })
               }
             />
-            <button className="submitButton">Submit</button>
+            <motion.button
+              className="submitButton"
+              whileHover={{ boxShadow: "0 0 1rem #1756dd" }}
+            >
+              Submit
+            </motion.button>
             {submitMessage && (
               <motion.div
                 className="submitMessage"

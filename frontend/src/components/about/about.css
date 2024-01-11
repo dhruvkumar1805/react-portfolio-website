@@ -64,3 +64,28 @@
   color: #ffffff;
   width: 140px;
 }
+
+@media screen and (max-width: 768px) {
+  .aboutContent {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 30px;
+  }
+  .aboutContainer {
+    margin-top: 160px;
+  }
+  .aboutContainer h1 {
+    font-size: 32px;
+  }
+  .aboutContent img {
+    width: 80%;
+  }
+  .aboutRightContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 90%;
+  }
+}

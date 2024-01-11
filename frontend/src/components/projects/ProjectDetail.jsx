@@ -40,11 +40,11 @@ const ProjectDetail = ({ project, onClose }) => {
               View Code
             </motion.a>
             <motion.a
-              href={project.demo}
+              href={project.live}
               target="_blank"
               whileHover={{ boxShadow: "0 0 1rem #1756dd" }}
             >
-              Live Demo
+              See Live
             </motion.a>
           </div>
         </div>

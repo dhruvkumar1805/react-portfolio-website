@@ -100,3 +100,24 @@
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
 }
+
+@media screen and (max-width: 768px) {
+  .projectsContainerBox {
+    width: 90%;
+  }
+  .projectsContainer h1 {
+    font-size: 32px;
+  }
+  .projectsContainer p {
+    font-size: 16px;
+  }
+  .projectTextContainer h1 {
+    font-size: 20px;
+  }
+  .project {
+    width: 100%;
+  }
+  .tags {
+    overflow: visible;
+  }
+}

@@ -42,59 +42,63 @@ const Main = () => {
           initial="initial"
           animate="animate"
         >
-          <img src="/assets/hero.png" alt="" />
-          <motion.img
-            className="reactLogo"
-            src="/assets/react.png"
-            alt=""
-            animate={{
-              x: [0, 7, -7, 0],
-              rotate: [0, 7, -7, 0],
-            }}
-            transition={{
-              repeat: Infinity,
-              duration: 6,
-            }}
-          />
-          <motion.img
-            className="javascriptLogo"
-            src="/assets/javascript.png"
-            alt=""
-            animate={{
-              y: [0, 7, -7, 0],
-              rotate: [0, 7, -7, 0],
-            }}
-            transition={{
-              repeat: Infinity,
-              duration: 6,
-            }}
-          />
-          <motion.img
-            className="githubLogo"
-            src="/assets/github.png"
-            alt=""
-            animate={{
-              x: [0, 7, -7, 0],
-              rotate: [0, 7, -7, 0],
-            }}
-            transition={{
-              repeat: Infinity,
-              duration: 6,
-            }}
-          />
-          <motion.img
-            className="linuxLogo"
-            src="/assets/linux.png"
-            alt=""
-            animate={{
-              y: [0, 7, -7, 0],
-              rotate: [0, 7, -7, 0],
-            }}
-            transition={{
-              repeat: Infinity,
-              duration: 6,
-            }}
-          />
+          <div className="pfp">
+            <img src="/assets/hero.png" alt="" />
+            <div className="pfpIcons">
+              <motion.img
+                className="reactLogo"
+                src="/assets/react.png"
+                alt=""
+                animate={{
+                  x: [0, 7, -7, 0],
+                  rotate: [0, 7, -7, 0],
+                }}
+                transition={{
+                  repeat: Infinity,
+                  duration: 6,
+                }}
+              />
+              <motion.img
+                className="javascriptLogo"
+                src="/assets/javascript.png"
+                alt=""
+                animate={{
+                  y: [0, 7, -7, 0],
+                  rotate: [0, 7, -7, 0],
+                }}
+                transition={{
+                  repeat: Infinity,
+                  duration: 6,
+                }}
+              />
+              <motion.img
+                className="githubLogo"
+                src="/assets/github.png"
+                alt=""
+                animate={{
+                  x: [0, 7, -7, 0],
+                  rotate: [0, 7, -7, 0],
+                }}
+                transition={{
+                  repeat: Infinity,
+                  duration: 6,
+                }}
+              />
+              <motion.img
+                className="linuxLogo"
+                src="/assets/linux.png"
+                alt=""
+                animate={{
+                  y: [0, 7, -7, 0],
+                  rotate: [0, 7, -7, 0],
+                }}
+                transition={{
+                  repeat: Infinity,
+                  duration: 6,
+                }}
+              />
+            </div>
+          </div>
           <motion.h1 variants={textVariants}>Hi, I'm Dhruv</motion.h1>
           <motion.p variants={textVariants} className="mainDescription">
             Crafting Seamless Code for Unparalleled Digital Excellence.
@@ -119,7 +123,7 @@ const Main = () => {
         initial="initial"
         animate="animate"
       >
-        Developer Tech Enthusiast Programmer Designer
+        Programmer Tech Enthusiast Developer Designer
       </motion.div>
     </div>
   );

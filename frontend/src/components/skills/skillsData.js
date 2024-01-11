@@ -31,6 +31,11 @@ export const skills = [
         image:
           "https://static-00.iconduck.com/assets.00/framer-icon-512x512-efa82mgo.png",
       },
+      {
+        name: "Material UI",
+        image:
+          "https://static-00.iconduck.com/assets.00/material-ui-icon-512x406-fhnu85xg.png",
+      },
     ],
   },
   {
@@ -44,7 +49,7 @@ export const skills = [
       {
         name: "GitHub",
         image:
-          "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
+          "https://static-00.iconduck.com/assets.00/github-icon-512x499-ziwq0a1i.png",
       },
       {
         name: "VS Code",
@@ -55,6 +60,11 @@ export const skills = [
         name: "Bash",
         image:
           "https://static-00.iconduck.com/assets.00/bash-icon-448x512-t4tppxv4.png",
+      },
+      {
+        name: "Vercel",
+        image:
+          "https://assets.vercel.com/image/upload/front/favicon/vercel/180x180.png",
       },
       {
         name: "Linux",

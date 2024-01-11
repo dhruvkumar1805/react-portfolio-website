@@ -60,8 +60,28 @@ textarea {
   border: none;
   border-radius: 5px;
   background: linear-gradient(to right, #823fee, #1756dd);
-  color: lightgray;
+  color: white;
   font-size: 15px;
   cursor: pointer;
   font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+  .contactWrapper {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  .textContainer {
+    gap: 20px;
+    text-align: center;
+    align-items: center;
+  }
+  .textContainer h1 {
+    font-size: 40px;
+    font-weight: 600;
+  }
+  .formContainer {
+    width: 100%;
+    padding: 50px;
+  }
 }

@@ -1,6 +1,8 @@
 .main {
   height: calc(100vh - 100px);
   background: linear-gradient(180deg, #0c0c1d, #111132);
+  overflow: hidden;
+  position: relative;
 }
 
 .mainWrapper {
@@ -10,10 +12,23 @@
   padding-bottom: 100px;
 }
 
+.pfp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.container img {
+  width: 9%;
+  margin-bottom: 10px;
+}
+
 .mainWrapper .reactLogo {
   position: absolute;
   top: 110px;
-  left: 39%;
+  left: 40%;
   width: 35px;
 }
 
@@ -26,15 +41,15 @@
 
 .mainWrapper .githubLogo {
   position: absolute;
-  top: 30px;
-  right: 40%;
+  top: 5px;
+  right: 41%;
   width: 28px;
 }
 
 .mainWrapper .linuxLogo {
   position: absolute;
-  top: 110px;
-  right: 37%;
+  top: 90px;
+  right: 38%;
   width: 35px;
 }
 
@@ -49,13 +64,9 @@
   z-index: 7;
 }
 
-.container img {
-  width: 9%;
-}
-
 h1 {
   font-size: 32px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .mainDescription {
@@ -96,4 +107,55 @@ h1 {
   white-space: nowrap;
   width: 50%;
   font-weight: normal;
+}
+
+@media screen and (max-width: 768px) {
+  .mainWrapper .reactLogo {
+    left: 20%;
+  }
+
+  .mainWrapper .javascriptLogo {
+    left: 16%;
+  }
+
+  .mainWrapper .githubLogo {
+    right: 22%;
+  }
+
+  .mainWrapper .linuxLogo {
+    right: 20%;
+  }
+
+  .container {
+    gap: 18px;
+  }
+  .container img {
+    width: 32%;
+  }
+  h1 {
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .mainDescription {
+    font-size: 32px;
+    width: 90%;
+  }
+  .description {
+    font-size: 16px;
+    width: 85%;
+    line-height: 24px;
+  }
+  .mainButton {
+    font-size: 14px;
+    margin-top: 18px;
+  }
+  .slidingTextContainer {
+    position: absolute;
+    bottom: -40px;
+    color: #ffffff09;
+    font-size: 50vh;
+    white-space: nowrap;
+    width: 50%;
+    font-weight: normal;
+  }
 }
