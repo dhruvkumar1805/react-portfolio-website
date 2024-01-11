@@ -1,0 +1,25 @@
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 1001;
+}
+
+.outer-circle {
+  border: 2px solid lightgray;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+}
+
+.inner-circle {
+  background-color: lightgray;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 2;
+}

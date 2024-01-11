@@ -6,10 +6,12 @@ import Skills from "./components/skills/Skills";
 import Projects from "./components/projects/Projects";
 import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
+import Cursor from "./components/cursor/Cursor";
 
 const App = () => {
   return (
     <div>
+      <Cursor />
       <section id="Homepage">
         <Navbar />
         <Main />
