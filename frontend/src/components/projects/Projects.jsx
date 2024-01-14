@@ -23,7 +23,8 @@ const Projects = () => {
 
   const ref = useRef();
 
-  const isInView = useInView(ref, { margin: "-200px" });
+  const isSmallScreen = window.innerWidth <= 400;
+  const isInView = useInView(ref, { margin: isSmallScreen ? "0px" : "-200px" });
 
   const openProjectDetail = (project) => {
     setSelectedProject(project);

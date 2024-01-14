@@ -47,7 +47,8 @@ const Contact = () => {
 
   const ref = useRef();
 
-  const isInView = useInView(ref, { margin: "-200px" });
+  const isSmallScreen = window.innerWidth <= 400;
+  const isInView = useInView(ref, { margin: isSmallScreen ? "0px" : "-200px" });
   return (
     <div className="contact">
       <motion.div

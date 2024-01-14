@@ -101,6 +101,7 @@
   }
   .skill {
     max-width: 380px;
+    margin: 0 15px 0 15px;
     padding: 14px 14px;
   }
   .skill h1 {
