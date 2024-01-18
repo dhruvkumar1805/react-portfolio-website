@@ -29,7 +29,7 @@ const Skills = () => {
           className="skillsContainer"
           variants={variants}
           initial="initial"
-          animate={isInView ? "animate" : "initial"}
+          animate={isInView && "animate"}
           ref={ref}
         >
           <div>

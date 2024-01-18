@@ -40,7 +40,7 @@ const Projects = () => {
         className="projectsWrapper"
         variants={variants}
         initial="initial"
-        animate={isInView ? "animate" : "initial"}
+        animate={isInView && "animate"}
         ref={ref}
       >
         <motion.div className="projectsContainer">

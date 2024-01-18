@@ -55,7 +55,7 @@ const Contact = () => {
         className="contactWrapper"
         variants={variants}
         initial="initial"
-        animate={isInView ? "animate" : "initial"}
+        animate={isInView && "animate"}
         ref={ref}
       >
         <motion.div className="textContainer" variants={variants}>

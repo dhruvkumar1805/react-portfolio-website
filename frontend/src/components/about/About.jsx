@@ -28,7 +28,7 @@ const About = () => {
           className="aboutContainer"
           variants={variants}
           initial="initial"
-          animate={isInView ? "animate" : "initial"}
+          animate={isInView && "animate"}
           ref={ref}
         >
           <h1>About</h1>
