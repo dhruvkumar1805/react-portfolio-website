@@ -3,6 +3,7 @@ import projectsData from "./projectsData";
 import { motion, useInView, AnimatePresence } from "framer-motion";
 import "./projects.css";
 import ProjectDetail from "./ProjectDetail";
+import { useTheme } from "../../context/ThemeContext";
 
 const variants = {
   initial: {
@@ -19,6 +20,15 @@ const variants = {
 };
 
 const Projects = () => {
+  const { isLightMode } = useTheme();
+  const projectsStyle = {
+    background: isLightMode ? "#eaeaea" : "#0c0c1d",
+    color: isLightMode ? "#333333" : "lightgray",
+  };
+  const projectStyle = {
+    background: isLightMode && "#474747",
+    color: isLightMode ? "lightgray" : "#D3D3D3",
+  };
   const [selectedProject, setSelectedProject] = useState(null);
 
   const ref = useRef();
@@ -35,7 +45,7 @@ const Projects = () => {
   };
 
   return (
-    <motion.div className="projects">
+    <motion.div className="projects" style={projectsStyle}>
       <motion.div
         className="projectsWrapper"
         variants={variants}
@@ -52,6 +62,7 @@ const Projects = () => {
             {projectsData.map((project) => (
               <motion.div
                 className="project"
+                style={projectStyle}
                 key={project.name}
                 onClick={() => openProjectDetail(project)}
                 whileHover={{ scale: 1.03 }}

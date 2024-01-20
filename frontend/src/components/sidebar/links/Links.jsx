@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useTheme } from "../../../context/ThemeContext";
 
 const variants = {
   open: {
@@ -27,10 +28,15 @@ const itemVariants = {
 };
 
 const Links = () => {
+  const { isLightMode, toggleTheme } = useTheme();
+
+  const linksStyle = {
+    color: isLightMode ? "lightgray" : "#333333",
+  };
   const items = ["Homepage", "Skills", "Projects", "About", "Contact"];
 
   return (
-    <motion.div className="links" variants={variants}>
+    <motion.div className="links" variants={variants} style={linksStyle}>
       {items.map((item) => (
         <motion.a
           href={`#${item}`}

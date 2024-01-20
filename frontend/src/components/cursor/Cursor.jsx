@@ -1,8 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import "./cursor.css";
+import { useTheme } from "../../context/ThemeContext";
 
 const Cursor = () => {
+  const { isLightMode } = useTheme();
+  const cursorStyle = {
+    backgroundColor: isLightMode && "#333333",
+    borderColor: isLightMode && "#333333",
+  };
+
   const [mousePosition, setMousePosition] = useState({
     x: 0,
     y: 0,
@@ -53,6 +60,7 @@ const Cursor = () => {
         variants={outerCircleVariants}
         initial="initial"
         animate="animate"
+        style={{ borderColor: isLightMode && "#333333" }}
       ></motion.div>
       <motion.div
         className="inner-circle"
@@ -62,6 +70,7 @@ const Cursor = () => {
         style={{
           left: mousePosition.x - 5,
           top: mousePosition.y - 5,
+          backgroundColor: isLightMode && "#333333",
         }}
       ></motion.div>
     </div>

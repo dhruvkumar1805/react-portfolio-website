@@ -7,28 +7,31 @@ import Projects from "./components/projects/Projects";
 import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
 import Cursor from "./components/cursor/Cursor";
+import ThemeProvider from "./context/ThemeContext";
 
 const App = () => {
   return (
-    <div>
-      <Cursor />
-      <section id="Homepage">
-        <Navbar />
-        <Main />
-      </section>
-      <section id="Skills">
-        <Skills />
-      </section>
-      <section id="Projects">
-        <Projects />
-      </section>
-      <section id="About">
-        <About />
-      </section>
-      <section id="Contact">
-        <Contact />
-      </section>
-    </div>
+    <ThemeProvider>
+      <div>
+        <Cursor />
+        <section id="Homepage">
+          <Navbar />
+          <Main />
+        </section>
+        <section id="Skills">
+          <Skills />
+        </section>
+        <section id="Projects">
+          <Projects />
+        </section>
+        <section id="About">
+          <About />
+        </section>
+        <section id="Contact">
+          <Contact />
+        </section>
+      </div>
+    </ThemeProvider>
   );
 };
 

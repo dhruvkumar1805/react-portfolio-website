@@ -1,6 +1,7 @@
 import React from "react";
 import "./main.css";
 import { motion } from "framer-motion";
+import { useTheme } from "../../context/ThemeContext";
 
 const textVariants = {
   initial: {
@@ -33,8 +34,19 @@ const slidingTextVariants = {
 };
 
 const Main = () => {
+  const { isLightMode } = useTheme();
+
+  const mainStyle = {
+    background: isLightMode ? "#eaeaea" : "#0c0c1d",
+    color: isLightMode ? "#333333" : "lightgray",
+  };
+
+  const descriptionStyle = {
+    color: isLightMode && "#2F302D",
+  };
+
   return (
-    <div className="main">
+    <div className="main" style={mainStyle}>
       <div className="mainWrapper">
         <motion.div
           className="container"
@@ -103,7 +115,11 @@ const Main = () => {
           <motion.p variants={textVariants} className="mainDescription">
             Crafting Seamless Code for Unparalleled Digital Excellence.
           </motion.p>
-          <motion.p variants={textVariants} className="description">
+          <motion.p
+            variants={textVariants}
+            className="description"
+            style={descriptionStyle}
+          >
             Versatile Web and Android Developer, crafting impactful experiences.
             Let's collaborate on innovative projects.
           </motion.p>

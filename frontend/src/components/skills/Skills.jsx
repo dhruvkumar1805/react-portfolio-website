@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import "./skills.css";
 import { skills } from "./skillsData";
+import { useTheme } from "../../context/ThemeContext";
 
 const variants = {
   initial: {
@@ -18,12 +19,22 @@ const variants = {
 };
 
 const Skills = () => {
+  const { isLightMode } = useTheme();
+  const skillsStyle = {
+    background: isLightMode ? "#eaeaea" : "#0c0c1d",
+    color: isLightMode ? "#333333" : "lightgray",
+  };
+  const skillStyle = {
+    borderColor: isLightMode && "#878787",
+    color: isLightMode ? "#333333" : "lightgray",
+  };
+
   const ref = useRef();
 
   const isSmallScreen = window.innerWidth <= 400;
   const isInView = useInView(ref, { margin: isSmallScreen ? "0px" : "-200px" });
   return (
-    <div className="skills">
+    <div className="skills" style={skillsStyle}>
       <div className="skillsWrapper">
         <motion.div
           className="skillsContainer"
@@ -45,17 +56,20 @@ const Skills = () => {
               animate="animate"
             >
               {skills.map((skill) => (
-                <div className="skill">
+                <div className="skill" style={skillStyle}>
                   <h1 className="skillTitle">{skill.title}</h1>
                   <ul className="skillList">
                     {skill.skills.map((item) => (
                       <motion.li
                         className="skillItem"
+                        style={skillStyle}
                         whileHover={{
                           scale: 1.05,
                           border: "none",
-                          backgroundColor: "lightgray",
-                          color: "black",
+                          backgroundColor: isLightMode
+                            ? "#474747"
+                            : "lightgray",
+                          color: isLightMode ? "lightgray" : "black",
                         }}
                       >
                         <img

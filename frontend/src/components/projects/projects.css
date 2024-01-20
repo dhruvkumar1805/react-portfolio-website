@@ -1,7 +1,6 @@
 .projects {
   background: linear-gradient(180deg, #0c0c1d, #111132);
   position: relative;
-  margin-top: 150px;
 }
 
 .projectsWrapper {
@@ -20,6 +19,7 @@
   align-items: center;
   text-align: center;
   position: relative;
+  margin-top: 100px;
 }
 
 .projectsContainer h1 {

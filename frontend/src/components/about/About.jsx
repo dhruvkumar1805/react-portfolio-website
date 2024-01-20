@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import "./about.css";
 import { motion, useInView } from "framer-motion";
+import { useTheme } from "../../context/ThemeContext";
 
 const variants = {
   initial: {
@@ -17,12 +18,17 @@ const variants = {
 };
 
 const About = () => {
+  const { isLightMode } = useTheme();
+  const aboutStyle = {
+    background: isLightMode ? "#eaeaea" : "#0c0c1d",
+    color: isLightMode ? "#333333" : "lightgray",
+  };
   const ref = useRef();
 
   const isSmallScreen = window.innerWidth <= 400;
   const isInView = useInView(ref, { margin: isSmallScreen ? "0px" : "-200px" });
   return (
-    <div className="about">
+    <div className="about" style={aboutStyle}>
       <div className="aboutWrapper">
         <motion.div
           className="aboutContainer"

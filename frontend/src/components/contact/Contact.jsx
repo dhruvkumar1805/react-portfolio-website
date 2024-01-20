@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import "./contact.css";
 import { motion, useInView } from "framer-motion";
 import axios from "axios";
+import { useTheme } from "../../context/ThemeContext";
 
 const variants = {
   initial: {
@@ -19,6 +20,17 @@ const variants = {
 };
 
 const Contact = () => {
+  const { isLightMode } = useTheme();
+  const contactStyle = {
+    background: isLightMode ? "#eaeaea" : "#0c0c1d",
+    color: isLightMode ? "#333333" : "lightgray",
+  };
+
+  const formStyle = {
+    borderColor: isLightMode && "#333333",
+    color: isLightMode ? "#333333" : "lightgray",
+  };
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -50,7 +62,7 @@ const Contact = () => {
   const isSmallScreen = window.innerWidth <= 400;
   const isInView = useInView(ref, { margin: isSmallScreen ? "0px" : "-200px" });
   return (
-    <div className="contact">
+    <div className="contact" style={contactStyle}>
       <motion.div
         className="contactWrapper"
         variants={variants}
@@ -82,6 +94,7 @@ const Contact = () => {
               type="text"
               placeholder="Name"
               required
+              style={formStyle}
               value={formData.name}
               onChange={(e) =>
                 setFormData({ ...formData, name: e.target.value })
@@ -91,6 +104,7 @@ const Contact = () => {
               type="email"
               placeholder="Email"
               required
+              style={formStyle}
               value={formData.email}
               onChange={(e) =>
                 setFormData({ ...formData, email: e.target.value })
@@ -100,6 +114,7 @@ const Contact = () => {
               rows={8}
               placeholder="Message"
               value={formData.message}
+              style={formStyle}
               onChange={(e) =>
                 setFormData({ ...formData, message: e.target.value })
               }

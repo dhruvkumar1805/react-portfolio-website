@@ -1,11 +1,18 @@
 import React from "react";
 import "./ProjectDetail.css";
 import { motion } from "framer-motion";
+import { useTheme } from "../../context/ThemeContext";
 
 const ProjectDetail = ({ project, onClose }) => {
+  const { isLightMode } = useTheme();
+  const projectDetailStyle = {
+    background: isLightMode ? "#eaeaea" : "#0c0c1d",
+    color: isLightMode ? "#333333" : "lightgray",
+  };
+
   return (
     <div className="projectDetailOverlay">
-      <div className="projectDetail">
+      <div className="projectDetail" style={projectDetailStyle}>
         <svg
           className="closeButton"
           xmlns="http://www.w3.org/2000/svg"
