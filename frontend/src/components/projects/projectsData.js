@@ -1,6 +1,25 @@
 const projectsData = [
   {
     id: 1,
+    name: "Weather App",
+    tags: [
+      "React",
+      "Javascript",
+      "Tailwind CSS",
+      "API",
+      "Axios",
+      "React Icons",
+      "CSS",
+      "HTML",
+    ],
+    description:
+      "Explore the world of weather with Weather App, offering a user-friendly interface for instant updates. Effortlessly search for detailed weather information in any city, state, or country. Whether you're planning a trip, checking on loved ones, or just staying informed, this app ensures you have accurate and up-to-date data at your fingertips. Embrace a seamless experience and make informed decisions about your day, powered by the convenience of my Weather App.",
+    image: "/assets/projects/weather_app.png",
+    code: "https://github.com/dhruvkumar1805/react_weather_app",
+    live: "https://react-weather-app-three-tau.vercel.app/",
+  },
+  {
+    id: 2,
     name: "Task Keeper",
     tags: ["React", "JavaScript", "MUI", "CSS", "HTML"],
     description:
@@ -10,7 +29,7 @@ const projectsData = [
     live: "https://react-keeper-app-seven.vercel.app",
   },
   {
-    id: 2,
+    id: 3,
     name: "Amazon Clone",
     tags: ["CSS", "HTML"],
     description:
@@ -20,7 +39,7 @@ const projectsData = [
     live: "https://amazon-clone-ebon-nu.vercel.app",
   },
   {
-    id: 3,
+    id: 4,
     name: "Currency Converter",
     tags: ["JavaScript", "API"],
     description:
@@ -28,16 +47,6 @@ const projectsData = [
     image: "/assets/projects/currency_converter.png",
     code: "https://github.com/dhruvkumar1805/currency_converter",
     live: "https://currency-converter-omega-five.vercel.app",
-  },
-  {
-    id: 4,
-    name: "Project",
-    tags: ["", "", ""],
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dolor diam, pellentesque non aliquet ac, congue ut metus. Nullam suscipit lectus odio, a egestas sem iaculis in.",
-    image: "",
-    code: "",
-    live: "",
   },
   {
     id: 5,

@@ -13,6 +13,10 @@ export const skills = [
           "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png",
       },
       {
+        name: "Tailwind CSS",
+        image: "https://files.raycast.com/nwt9ncojkvwmjfkaada8upafvpnu",
+      },
+      {
         name: "HTML",
         image: "https://www.w3.org/html/logo/badge/html5-badge-h-solo.png",
       },
