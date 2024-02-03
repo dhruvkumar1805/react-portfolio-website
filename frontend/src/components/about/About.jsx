@@ -57,7 +57,7 @@ const About = () => {
                 exploration of innovation!
               </p>
               <motion.a
-                href="/path/to/your/resume.pdf"
+                href="/assets/resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="resumeButton"
