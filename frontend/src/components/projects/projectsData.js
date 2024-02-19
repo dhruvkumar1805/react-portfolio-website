@@ -1,17 +1,18 @@
 const projectsData = [
   {
     id: 1,
+    name: "Task Tracker",
+    tags: ["ReactJS", "Tailwind CSS", "Local Storage"],
+    description:
+      "Take control of your daily tasks with Task Tracker web app, crafted using React. This user-friendly application allows you to effortlessly add, delete, and edit your to-do items. Stay organized by sorting tasks based on their status, streamlining your workflow for increased productivity. Simplify your routine and stay on top of your responsibilities with this intuitive and efficient task management solution.",
+    image: "/assets/projects/task_tracker.png",
+    code: "https://github.com/dhruvkumar1805/task_tracker_react",
+    live: "https://task-tracker-vert-sigma.vercel.app/",
+  },
+  {
+    id: 2,
     name: "Weather App",
-    tags: [
-      "React",
-      "Javascript",
-      "Tailwind CSS",
-      "API",
-      "Axios",
-      "React Icons",
-      "CSS",
-      "HTML",
-    ],
+    tags: ["ReactJS", "Tailwind CSS", "API", "Axios"],
     description:
       "Explore the world of weather with Weather App, offering a user-friendly interface for instant updates. Effortlessly search for detailed weather information in any city, state, or country. Whether you're planning a trip, checking on loved ones, or just staying informed, this app ensures you have accurate and up-to-date data at your fingertips. Embrace a seamless experience and make informed decisions about your day, powered by the convenience of my Weather App.",
     image: "/assets/projects/weather_app.png",
@@ -19,7 +20,7 @@ const projectsData = [
     live: "https://react-weather-app-three-tau.vercel.app/",
   },
   {
-    id: 2,
+    id: 3,
     name: "Task Keeper",
     tags: ["React", "JavaScript", "MUI", "CSS", "HTML"],
     description:
@@ -29,7 +30,7 @@ const projectsData = [
     live: "https://react-keeper-app-seven.vercel.app",
   },
   {
-    id: 3,
+    id: 4,
     name: "Amazon Clone",
     tags: ["CSS", "HTML"],
     description:
@@ -39,7 +40,7 @@ const projectsData = [
     live: "https://amazon-clone-ebon-nu.vercel.app",
   },
   {
-    id: 4,
+    id: 5,
     name: "Currency Converter",
     tags: ["JavaScript", "API"],
     description:
@@ -47,16 +48,6 @@ const projectsData = [
     image: "/assets/projects/currency_converter.png",
     code: "https://github.com/dhruvkumar1805/currency_converter",
     live: "https://currency-converter-omega-five.vercel.app",
-  },
-  {
-    id: 5,
-    name: "Project",
-    tags: ["", "", ""],
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dolor diam, pellentesque non aliquet ac, congue ut metus. Nullam suscipit lectus odio, a egestas sem iaculis in.",
-    image: "",
-    code: "",
-    live: "",
   },
 ];
 
