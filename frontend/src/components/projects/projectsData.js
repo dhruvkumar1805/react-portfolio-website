@@ -1,6 +1,16 @@
 const projectsData = [
   {
     id: 1,
+    name: "Nova Clothing",
+    tags: ["ReactJS", "Tailwind CSS", "Context API"],
+    description:
+      "Introducing Nova Clothing – Your Ultimate Fashion Destination! 🌟 Elevate your style with our sleek and modern ReactJS-powered ecommerce website. Explore the latest trends in fashion and discover an array of curated collections that seamlessly blend chic designs with comfort. Enjoy a seamless shopping experience with our user-friendly interface, responsive design, and intuitive navigation. Nova Clothing is not just a store; it's a fashion haven where every click brings you closer to your perfect style statement.",
+    image: "/assets/projects/nova_clothing.png",
+    code: "https://github.com/dhruvkumar1805/ecommerce-react",
+    live: "https://nova-clothing-ecommerce.vercel.app/",
+  },
+  {
+    id: 2,
     name: "Task Tracker",
     tags: ["ReactJS", "Tailwind CSS", "Local Storage"],
     description:
@@ -10,7 +20,7 @@ const projectsData = [
     live: "https://task-tracker-vert-sigma.vercel.app/",
   },
   {
-    id: 2,
+    id: 3,
     name: "Weather App",
     tags: ["ReactJS", "Tailwind CSS", "API", "Axios"],
     description:
@@ -20,7 +30,7 @@ const projectsData = [
     live: "https://react-weather-app-three-tau.vercel.app/",
   },
   {
-    id: 3,
+    id: 4,
     name: "Task Keeper",
     tags: ["React", "JavaScript", "MUI", "CSS", "HTML"],
     description:
@@ -30,7 +40,7 @@ const projectsData = [
     live: "https://react-keeper-app-seven.vercel.app",
   },
   {
-    id: 4,
+    id: 5,
     name: "Amazon Clone",
     tags: ["CSS", "HTML"],
     description:
@@ -40,7 +50,7 @@ const projectsData = [
     live: "https://amazon-clone-ebon-nu.vercel.app",
   },
   {
-    id: 5,
+    id: 6,
     name: "Currency Converter",
     tags: ["JavaScript", "API"],
     description:
