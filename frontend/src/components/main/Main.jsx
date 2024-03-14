@@ -18,21 +18,6 @@ const textVariants = {
   },
 };
 
-const slidingTextVariants = {
-  initial: {
-    x: 0,
-  },
-  animate: {
-    x: "-220%",
-    transition: {
-      repeat: Infinity,
-      repeatType: "mirror",
-      duration: 15,
-      delay: 0.2,
-    },
-  },
-};
-
 const Main = () => {
   const { isLightMode } = useTheme();
 
@@ -54,8 +39,10 @@ const Main = () => {
           initial="initial"
           animate="animate"
         >
-          <div className="pfp">
-            <img src="/assets/hero.png" alt="" />
+          <div className="pfpContainer">
+            <div className="pfp">
+              <img src="/assets/hero.png" alt="" />
+            </div>
             <div className="pfpIcons">
               <motion.img
                 className="reactLogo"
@@ -111,36 +98,30 @@ const Main = () => {
               />
             </div>
           </div>
-          <motion.h1 variants={textVariants}>Hi, I'm Dhruv</motion.h1>
-          <motion.p variants={textVariants} className="mainDescription">
-            Crafting Seamless Code for Unparalleled Digital Excellence.
-          </motion.p>
-          <motion.p
-            variants={textVariants}
-            className="description"
-            style={descriptionStyle}
-          >
-            Versatile Web and Android Developer, crafting impactful experiences.
-            Let's collaborate on innovative projects.
-          </motion.p>
-          <motion.a
-            href="#Projects"
-            variants={textVariants}
-            className="mainButton"
-            whileHover={{ boxShadow: "0 0 1rem #1756dd" }}
-          >
-            See my works
-          </motion.a>
+          <div className="text-content">
+            <motion.h1 variants={textVariants}>Hi, I'm Dhruv</motion.h1>
+            <motion.p variants={textVariants} className="mainDescription">
+              Frontend Developer
+            </motion.p>
+            <motion.p
+              variants={textVariants}
+              className="description"
+              style={descriptionStyle}
+            >
+              Versatile Web and Android Developer, crafting impactful
+              experiences. Let's collaborate on innovative projects.
+            </motion.p>
+            <motion.a
+              href="#Projects"
+              variants={textVariants}
+              className="mainButton"
+              whileHover={{ boxShadow: "0 0 1rem #1756dd" }}
+            >
+              Say Hello
+            </motion.a>
+          </div>
         </motion.div>
       </div>
-      <motion.div
-        className="slidingTextContainer"
-        variants={slidingTextVariants}
-        initial="initial"
-        animate="animate"
-      >
-        Programmer Tech Enthusiast Developer Designer
-      </motion.div>
     </div>
   );
 };
