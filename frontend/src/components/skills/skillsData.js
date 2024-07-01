@@ -17,20 +17,6 @@ export const skills = [
         image: "https://files.raycast.com/nwt9ncojkvwmjfkaada8upafvpnu",
       },
       {
-        name: "HTML",
-        image: "https://www.w3.org/html/logo/badge/html5-badge-h-solo.png",
-      },
-      {
-        name: "CSS",
-        image:
-          "https://static-00.iconduck.com/assets.00/file-type-css-icon-451x512-eftbqujz.png",
-      },
-      {
-        name: "Bootstrap",
-        image:
-          "https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png",
-      },
-      {
         name: "Framer Motion",
         image:
           "https://static-00.iconduck.com/assets.00/framer-icon-512x512-efa82mgo.png",
@@ -39,6 +25,30 @@ export const skills = [
         name: "Material UI",
         image:
           "https://static-00.iconduck.com/assets.00/material-ui-icon-512x406-fhnu85xg.png",
+      },
+    ],
+  },
+  {
+    title: "Backend",
+    skills: [
+      {
+        name: "Node JS",
+        image:
+          "https://static-00.iconduck.com/assets.00/node-js-icon-454x512-nztofx17.png",
+      },
+      {
+        name: "Express JS",
+        image:
+          "https://e7.pngegg.com/pngimages/925/447/png-clipart-express-js-node-js-javascript-mongodb-node-js-text-trademark.png",
+      },
+      {
+        name: "Mongo DB",
+        image: "https://www.mongodb.com/assets/images/global/favicon.ico",
+      },
+      {
+        name: "Linux",
+        image:
+          "https://static-00.iconduck.com/assets.00/linux-icon-439x512-rnhe78x0.png",
       },
     ],
   },
@@ -70,41 +80,36 @@ export const skills = [
         image:
           "https://assets.vercel.com/image/upload/front/favicon/vercel/180x180.png",
       },
-      {
-        name: "Linux",
-        image:
-          "https://static-00.iconduck.com/assets.00/linux-icon-439x512-rnhe78x0.png",
-      },
     ],
   },
-  {
-    title: "Designing",
-    skills: [
-      {
-        name: "Figma",
-        image:
-          "https://static-00.iconduck.com/assets.00/apps-figma-icon-512x512-uapiauws.png",
-      },
-      {
-        name: "Adobe Photoshop",
-        image:
-          "https://static-00.iconduck.com/assets.00/adobe-photoshop-icon-512x512-sphmjz8h.png",
-      },
-      {
-        name: "Adobe Illustrator",
-        image:
-          "https://static-00.iconduck.com/assets.00/adobe-illustrator-icon-512x512-s1nfujvx.png",
-      },
-      {
-        name: "Canva",
-        image:
-          "https://www.latimes.com/coupon-codes/static/shop/37687/logo/Canva_Coupon.jpg",
-      },
-      {
-        name: "GIMP",
-        image:
-          "https://static-00.iconduck.com/assets.00/gimp-icon-512x506-1akld8rd.png",
-      },
-    ],
-  },
+  // {
+  //   title: "Designing",
+  //   skills: [
+  //     {
+  //       name: "Figma",
+  //       image:
+  //         "https://static-00.iconduck.com/assets.00/apps-figma-icon-512x512-uapiauws.png",
+  //     },
+  //     {
+  //       name: "Adobe Photoshop",
+  //       image:
+  //         "https://static-00.iconduck.com/assets.00/adobe-photoshop-icon-512x512-sphmjz8h.png",
+  //     },
+  //     {
+  //       name: "Adobe Illustrator",
+  //       image:
+  //         "https://static-00.iconduck.com/assets.00/adobe-illustrator-icon-512x512-s1nfujvx.png",
+  //     },
+  //     {
+  //       name: "Canva",
+  //       image:
+  //         "https://www.latimes.com/coupon-codes/static/shop/37687/logo/Canva_Coupon.jpg",
+  //     },
+  //     {
+  //       name: "GIMP",
+  //       image:
+  //         "https://static-00.iconduck.com/assets.00/gimp-icon-512x506-1akld8rd.png",
+  //     },
+  //   ],
+  // },
 ];

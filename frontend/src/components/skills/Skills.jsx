@@ -4,16 +4,31 @@ import "./skills.css";
 import { skills } from "./skillsData";
 import { useTheme } from "../../context/ThemeContext";
 
-const variants = {
+const containerVariants = {
   initial: {
-    x: -80,
+    y: 100,
     opacity: 0,
   },
   animate: {
-    x: 0,
+    y: 0,
     opacity: 1,
     transition: {
       duration: 0.6,
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+const childVariants = {
+  initial: {
+    opacity: 0,
+    y: 20,
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.5,
     },
   },
 };
@@ -33,12 +48,13 @@ const Skills = () => {
 
   const isSmallScreen = window.innerWidth <= 400;
   const isInView = useInView(ref, { margin: isSmallScreen ? "0px" : "-200px" });
+
   return (
     <div className="skills" style={skillsStyle}>
       <div className="skillsWrapper">
         <motion.div
           className="skillsContainer"
-          variants={variants}
+          variants={containerVariants}
           initial="initial"
           animate={isInView && "animate"}
           ref={ref}
@@ -51,12 +67,17 @@ const Skills = () => {
             </p>
             <motion.div
               className="skillsBoxContainer"
-              variants={variants}
+              variants={containerVariants}
               initial="initial"
-              animate="animate"
+              animate={isInView && "animate"}
             >
               {skills.map((skill) => (
-                <div className="skill" style={skillStyle}>
+                <motion.div
+                  className="skill"
+                  style={skillStyle}
+                  key={skill.title}
+                  variants={childVariants}
+                >
                   <h1 className="skillTitle">{skill.title}</h1>
                   <ul className="skillList">
                     {skill.skills.map((item) => (
@@ -71,6 +92,8 @@ const Skills = () => {
                             : "lightgray",
                           color: isLightMode ? "lightgray" : "black",
                         }}
+                        key={item.name}
+                        variants={childVariants}
                       >
                         <img
                           className="skillImage"
@@ -81,7 +104,7 @@ const Skills = () => {
                       </motion.li>
                     ))}
                   </ul>
-                </div>
+                </motion.div>
               ))}
             </motion.div>
           </div>

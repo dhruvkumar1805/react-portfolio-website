@@ -5,16 +5,31 @@ import "./projects.css";
 import ProjectDetail from "./ProjectDetail";
 import { useTheme } from "../../context/ThemeContext";
 
-const variants = {
+const containerVariants = {
   initial: {
-    x: -80,
+    y: 80,
     opacity: 0,
   },
   animate: {
-    x: 0,
+    y: 0,
     opacity: 1,
     transition: {
       duration: 0.6,
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+const childVariants = {
+  initial: {
+    opacity: 0,
+    y: 20,
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.5,
     },
   },
 };
@@ -48,7 +63,7 @@ const Projects = () => {
     <motion.div className="projects" style={projectsStyle}>
       <motion.div
         className="projectsWrapper"
-        variants={variants}
+        variants={containerVariants}
         initial="initial"
         animate={isInView && "animate"}
         ref={ref}
@@ -58,7 +73,10 @@ const Projects = () => {
           <p>
             Over the past 2 years, I've developed projects in various domains.
           </p>
-          <motion.div className="projectsContainerBox">
+          <motion.div
+            className="projectsContainerBox"
+            variants={containerVariants}
+          >
             {projectsData.map((project) => (
               <motion.div
                 className="project"
@@ -66,14 +84,18 @@ const Projects = () => {
                 key={project.name}
                 onClick={() => openProjectDetail(project)}
                 whileHover={{ scale: 1.03 }}
+                variants={childVariants}
               >
                 <img src={project.image} alt="" />
-                <motion.div className="tags">
+                <motion.div className="tags" variants={childVariants}>
                   {project.tags.map((tag) => (
-                    <span>{tag}</span>
+                    <span key={tag}>{tag}</span>
                   ))}
                 </motion.div>
-                <motion.div className="projectTextContainer">
+                <motion.div
+                  className="projectTextContainer"
+                  variants={childVariants}
+                >
                   <h1>{project.name}</h1>
                   <p>{project.description}</p>
                 </motion.div>

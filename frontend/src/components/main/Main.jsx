@@ -5,15 +5,15 @@ import { useTheme } from "../../context/ThemeContext";
 
 const textVariants = {
   initial: {
-    x: -50,
+    y: 50,
     opacity: 0,
   },
   animate: {
-    x: 0,
+    y: 0,
     opacity: 1,
     transition: {
-      duration: 0.5,
-      staggerChildren: 0.1,
+      duration: 0.6,
+      staggerChildren: 0.2,
     },
   },
 };
@@ -101,18 +101,18 @@ const Main = () => {
           <div className="text-content">
             <motion.h1 variants={textVariants}>Hi, I'm Dhruv</motion.h1>
             <motion.p variants={textVariants} className="mainDescription">
-              Frontend Developer
+              Full Stack Developer
             </motion.p>
             <motion.p
               variants={textVariants}
               className="description"
               style={descriptionStyle}
             >
-              Versatile Web and Android Developer, crafting impactful
-              experiences. Let's collaborate on innovative projects.
+              I build things for the web, crafting impactful experiences. Let's
+              collaborate on innovative projects.
             </motion.p>
             <motion.a
-              href="#Projects"
+              href="#Contact"
               variants={textVariants}
               className="mainButton"
               whileHover={{ boxShadow: "0 0 1rem #1756dd" }}

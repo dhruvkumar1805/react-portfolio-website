@@ -84,9 +84,11 @@ textarea {
   .textContainer h1 {
     font-size: 40px;
     font-weight: 600;
+    letter-spacing: 1px;
   }
   .formContainer {
     width: 100%;
-    padding: 30px;
+    padding: 10px;
+    margin-bottom: 50px;
   }
 }
